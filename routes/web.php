@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/wlc', function () {
     return view('welcome');
 });
+
+Route::get('/', [\App\Http\Controllers\Promo\PromoController::class, 'index'])->name('index');
+Route::get('/{dtl}', [\App\Http\Controllers\Promo\PromoController::class, 'details'])->name('details');
+
+
