@@ -20,7 +20,7 @@
                     <td><h3>{{ $item->title }}</h3></td> 
                     <td>{{ $item->price }}</td> 
                     <td> 
-                    <a href="/{{ $item->id }}">Подробнее...</a> 
+                    <a href="{{ route('details', ['dtl' => $item->id]) }}">See more...</a> 
                     </td> 
                 </tr> 
                 @endforeach
@@ -29,6 +29,6 @@
         @endif
     </div> 
 
-@endsection('content')
+@endsection
    
 

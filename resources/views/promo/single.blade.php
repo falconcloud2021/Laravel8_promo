@@ -8,7 +8,7 @@
         <h2>{{ $dtl->title }}</h2>
         <p>{{ $dtl->content }}</p>
         <p>{{ $dtl->price }} $.</p>
-        <p><a href="/">To main promo list</a></p>
+        <p><a href="{{ route('index') }}">To main promo list</a></p>
     </div> 
-@endsection('content')
+@endsection
  
